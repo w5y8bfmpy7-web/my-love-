@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Yamen ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- الشاشة 1 -->
+  <div class="screen active" id="screen1">
+    <div class="sparkles">✦ ✧ ✦</div>
+    <p>شخص غالي على قلبي ❤️</p>
+    <h1>Yamen</h1>
+    <p class="small">عندي إلك شيء صغير...</p>
+    <button onclick="nextScreen(2)">افتح رسالتك 💌</button>
+  </div>
+  <!-- الشاشة 2 -->
+  <div class="screen" id="screen2">
+    <div class="big-heart">❤️</div>
+    <p>اليوم مو يوم عادي...</p>
+    <h1>Happy Birthday</h1>
+    <h2>Yamen ❤️</h2>
+    <p>اليوم يوم حبيب قلبي.</p>
+    <button onclick="nextScreen(3)">كمّل ❤️</button>
+  </div>
+  <!-- الشاشة 3 -->
+  <div class="screen photo-screen" id="screen3">
+    <img src="https://i.postimg.cc/GmZd8ZjZ/IMG-1869.jpg" alt="Yamen">
+    <p>أجمل إنسان ❤️</p>
+    <button onclick="nextScreen(4)">الذكرى التالية →</button>
+  </div>
+  <!-- الشاشة 4 -->
+  <div class="screen photo-screen" id="screen4">
+    <p>تعال 🥺✨</p>
+    <img src="https://i.postimg.cc/vBZqQmVB/7C90F1A2-16C6-4977-8E8F-F9AA59EE329E.jpg" alt="Memory">
+    <button onclick="nextScreen(5)">الذكرى التالية →</button>
+  </div>
+  <!-- الشاشة 5 -->
+  <div class="screen photo-screen" id="screen5">
+    <img src="https://i.postimg.cc/nhK0Bm4y/0B976209-7F2C-4216-9D5E-647F74479B39.jpg" alt="Memory">
+    <p>إنت أطيب قلب 🤍</p>
+    <button onclick="nextScreen(6)">الذكرى التالية →</button>
+  </div>
+  <!-- الشاشة 6 -->
+  <div class="screen photo-screen" id="screen6">
+    <img src="https://i.postimg.cc/MTLDqmwt/IMG-1864.jpg" alt="Memory">
+    <p>ضحكتك بتكفيني ❤️</p>
+    <button onclick="nextScreen(7)">الذكرى التالية →</button>
+  </div>
+  <!-- الشاشة 7 -->
+  <div class="screen photo-screen" id="screen7">
+    <p>حتى وجهي نور لما حبيتك ❤️</p>
+    <img src="https://i.postimg.cc/9Q2s6C1s/IMG-1731.jpg" alt="Memory">
+    <button onclick="nextScreen(8)">الذكرى التالية →</button>
+  </div>
+  <!-- الشاشة 8 -->
+  <div class="screen photo-screen" id="screen8">
+    <img src="https://i.postimg.cc/W19S5vyQ/87A2C8FA-9921-4F51-9658-BBCFDF6DCCA7.jpg" alt="Memory">
+    <p>وأحلى شيء لسا جاي... 💕</p>
+    <button onclick="nextScreen(9)">كمّل معي ❤️</button>
+  </div>
+  <!-- الشاشة 9 -->
+  <div class="screen" id="screen9">
+    <div class="envelope">💌</div>
+<h2>إلى يامني ❤️</h2>
+<div class="letter">
+  <p>
+    روح قلبي وحبيب عمري يامن كل عام وانت حبيبي وانت معي يروحي
+    بحبك كتير كل عام وانت بخير ينور عيوني
+  </p>
+  <p>
+    يارب تكون سنة حلوة وكلها خير عليك،
+    ربنا يعلي قدرك ويرزقك من أوسع أبوابه
+    ويعطيك ليرضيك ويرضى عنك ❤️
+  </p>
+  <p class="signature">
+    حبيبة قلبك، إيمان 💕
+  </p>
+</div>
+<button onclick="nextScreen(10)">إلك أغنية 🎵</button>
+  </div>
+  <!-- الشاشة 10 -->
+  <div class="screen" id="screen10">
+    <div class="music-icon">🎵</div>
+<h2>أغنية إلك</h2>
+<p>كل كلمة فيها بتوصفني معك ❤️</p>
+<a
+  href="https://youtu.be/4zHM1UI3LeY?si=53RnZN5EwRblG93z"
+  target="_blank"
+  class="music-button">
+  🎵 اسمعها معي
+</a>
+<button onclick="nextScreen(11)">كمّل ❤️</button>
+  </div>
+  <!-- الشاشة 11 -->
+  <div class="screen" id="screen11">
+    <h2>قديش بحبك؟</h2>
+<div class="counter" id="counter">0%</div>
+<button id="countButton" onclick="startCounter()">
+  احسب ❤️
+</button>
+<button
+  id="afterCounter"
+  onclick="nextScreen(12)"
+  style="display: none;">
+  شو النتيجة؟ 💕
+</button>
+  </div>
+  <!-- الشاشة 12 - النهاية -->
+  <div class="screen final" id="screen12">
+<div id="floating-love"></div>
+<div class="final-content">
+  <div class="kiss-top">💋</div>
+  <h1>Happy Birthday Yamen</h1>
+  <h2>بحبك ❤️</h2>
+  <p>حبيبة قلبك إيمان 💕</p>
+  <div class="kisses">
+    💋 ❤️ 💋 ❤️ 💋 ❤️ 💋
+  </div>
+  <div class="love-message">
+    إليك كل الحب والقبلات بالعالم 💋❤️
+  </div>
+</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
